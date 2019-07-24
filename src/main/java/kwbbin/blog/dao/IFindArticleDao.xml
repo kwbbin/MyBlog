@@ -1,0 +1,13 @@
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="kwbbin.blog.dao.IFindArticleDao">
+ 	<select id="FindArticle"  resultType="article" parameterType="java.lang.String">
+ 		SELECT * FROM article WHERE title like '%${condition}%'
+ 	</select>
+ 	<select id="findArticleNum"  resultType="Integer" parameterType="java.lang.String">
+ 		select count(*) from article WHERE title like '%${condition}%'
+ 	</select>
+ 	
+ 	
+ </mapper>

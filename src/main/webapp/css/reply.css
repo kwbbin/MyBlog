@@ -1,0 +1,125 @@
+ /*表情模块 */
+#emojiBox{
+    display: inline-block;
+    position: relative;
+}
+#emojiBox label{
+    display: inline-block;
+    color:#0b394d;
+    text-align: center;
+    width:80px;
+    height:30px;
+    margin-left: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+}
+#emojiBox>img{
+    position: relative;
+    border-radius: 50%;
+    top:3px;
+    padding-top: 5px;
+    cursor: pointer;
+    width:30px;
+}
+/* 表情模块 */
+
+
+
+/* 回复框的css */
+#replyBox{
+    position:fixed;
+    top:100px;
+    left:100px;
+    width:500px;
+    border:1px solid #999;
+    background:#96b97d;
+    border-radius: 5px;
+    display:none;
+}
+
+#replyBox .close{
+    position:absolute;
+    right:5px;
+    top:2px;
+    display:inline-block;
+    line-height: 15px;
+    text-align:center;
+    width:15px;
+    height:15px;
+    border:1px solid #999;
+    cursor: pointer;
+}
+#replyBox .box{
+    position: absolute;
+    display: inline-block;
+    top:185px;
+    left:130px;
+    width:220px;
+    height:30px;
+}
+#replyBox .box span{
+    color:#0b394d;
+    line-height: 30px;
+}
+#replyBox .box .imgbox{
+    position: absolute;
+    right:0px;
+    display: inline-block;
+}
+
+#replyBox .box .imgbox div{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 2px;
+
+}
+#replyBox .box .imgbox img{
+    width:30px;
+    height:30px;
+}
+
+#replyBox .speak_area{
+    width:98%;
+    padding-bottom: 20px;
+    color:#db7d12d0;
+    margin:0 auto;
+    letter-spacing:2px;
+    height:220px;
+}
+
+.speak_content iframe{
+    border-radius: 10px;
+    width:100%;
+    height:140px;
+    padding:5px 0px;
+    letter-spacing:1px;
+    background: rgba(255,255,255,0.9);
+    resize: none;
+    font-size: 15px;
+    line-height: 25px;
+    box-sizing:border-box;
+    border: 1px solid #999;
+    margin: 0 auto;
+}
+
+.speak_content input[type=button],.speak_content input[type=submit]{
+    width:100px;
+    height: 40px;
+    color:#fff;
+    font-weight: 700;
+    font-size: 16px;
+    background: #4da488;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border: 1px solid #999;
+    box-shadow:2px 2px 5px darkcyan inset;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+
+
+/* 回复框的css */

@@ -1,0 +1,303 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    background: url(../images/register.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    min-width: 600px;
+    min-height: 550px;
+}
+#clear{
+    clear: both;
+}
+
+.canNull{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    font-size: 13px;
+    color:#999;
+
+}
+
+.odyBox{
+    width:600px;
+    height:450px;
+}
+.registerBox{
+    position: absolute;
+    padding-right: 50px;
+    width:623px;
+    top:160px;
+    left:250px;
+    height:300px;
+
+}
+.registerBox .left{
+    height:100%;
+    width:53px;
+    float:left;
+}
+
+.registerBox .left .lTop,.registerBox .left .lBottom{
+    height:50%;
+    width:53px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    color:rgba(255,255,255,0.8);
+}
+.registerBox .left .lTop span,.registerBox .left .lBottom span{
+    position: relative;
+    top:55px;
+    
+}
+
+.registerBox .left .action{
+    width:60px;
+    position: relative;
+    left:-7px;
+    background: rgba(255,255,255,0.6);
+    color:rgba(0,0,0,0.8);
+
+}
+.registerBox .right1,.registerBox .right2{
+    height:100%;
+    width:560px;
+    background: rgba(255,255,255,0.7);
+    float:left;
+}
+.registerBox .right1{
+    display: block;
+}
+.registerBox .right2{
+    display: none;
+}
+
+input{
+    width:190px;
+    height:28px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+input[value="验证码"]{
+    width:100px;
+}
+input[type="submit"]{
+    background: #504c65;
+    color:#fff;
+    cursor: pointer;
+    border-left:1px solid #333;
+    border-right: 1px solid #333;
+}
+#shuaxin{
+    cursor: pointer;
+	position:relative;
+	display:inline-block;
+	width:20px;
+	height:20px;
+	background:url(../images/refresh.png) -1px -1px no-repeat;
+	background-size:20px;
+	left:5px;
+	top:5px;
+}
+.verificationCode label{
+    display: inline-block;
+    margin-left: 15px;
+    background:#999;
+    width:70px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing:3px;
+}
+
+#verifyUser{
+	position:absolute;
+	top:0;left:o;
+}
+
+.right2{
+    padding-right: 10px;
+}
+.right2 input:nth-child(even){
+   margin-left: 70px;
+}
+
+.right2 input[name=email]{
+    margin-left: 70px;
+}
+
+.right2 input[type="submit"]{
+    margin-left: 0px;
+}
+
+.right2 .Radio{
+    height:30px;
+    display: inline-block;
+    width:100px;
+    position:relative;
+    top:-20px;
+}
+.right2 .Radio label{
+    cursor: pointer;
+    position: relative;
+    top:-5px;
+    font-size: 15px;
+}
+
+.right2 input[type="radio"]{
+    width:20px;
+    height:16px;
+    margin: 0;
+    padding: 0;
+}
+
+.right2 .Face{
+    position: relative;
+    display: inline-block;
+    left:175px;
+    width:135px;
+    border:1px solid #504c65;
+    padding:0 5px;
+}
+
+.right2 .Face input{
+	display:none;
+}
+
+
+.right2 .Face label{
+    width: 150px;
+    font-size: 13px;
+    cursor: pointer;
+    background:none;
+    letter-spacing:1px;
+    margin: 0;
+    width:100px;
+    position: relative;
+    top:-5px;
+}
+
+#previewDiv{
+    position: absolute;
+    display: inline-block;
+    width:50px;
+    height:50px;
+    border-radius: 5px;
+    left:570px;
+    top:120px;
+    display: none;
+}
+
+#previewDiv img{
+    width:50px;
+    height:50px;
+    border-radius: 5px;
+
+}
+
+#preview{
+    position: relative;
+    left:195px;
+    top:-5px;
+    color: #504c65;
+}
+#face{
+    position: absolute;
+    background: rgba(255,255,255,0);
+    width:0px;
+    height:0px;
+}
+
+.right2 .Face label span{
+    position: relative;
+    top:5px;
+    font-size: 30px;
+    font-weight: 800;
+}
+.right2 .form{
+    padding-left: 20px;
+    padding-top: 10px;
+    /* border:1px solid red; */
+}
+
+.right2 .verificationCode input{
+    width:80px;
+}
+
+.right1 .form{
+    position: relative;
+    width:360px;
+    padding-bottom: 50px;
+    text-align: center;
+    padding-top: 80px;
+    background: url(../images/registerLine.jpg) 350px 200px no-repeat,
+    url(../images/registerLine.jpg) 350px 40px no-repeat;
+}
+
+.right1 .form span{
+    position: absolute;
+    width:20px;
+    font-size: 15px;
+    line-height: 15px;
+    top:112px;
+    right:0;
+    color:#777;
+}
+.right1 input{
+    width:220px;
+    height:30px;
+    margin-bottom: 20px;
+}
+
+#submitError,#submitError2{
+    position: absolute;
+    background: none;
+    font-size: 13px;
+    color:red;
+    letter-spacing:0px;
+    bottom:25px;
+    left:280px;
+}
+
+#submitError{
+    bottom:30px;
+    left:70px;
+}
+
+/* 表单验证错误提示框 */
+.warn,.warn1{
+    border:1px solid #999;
+    border-radius:3px;
+    max-width:100px;
+    color:red;
+    padding:5px;
+    position: absolute;
+    font-size: 13px;
+    background: rgba(0,0,0,0.8);
+}
+.warn:after,.warn1:after{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    color: white;
+    text-align: center;
+    border-top: 7px solid transparent;
+    border-right: 10px solid #999;
+    border-bottom: 7px solid transparent;
+    top:6px;
+    left: -15px;
+}
+
+/* 表单验证错误提示框 */

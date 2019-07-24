@@ -1,0 +1,87 @@
+#rich-editor{
+    width:100%;
+    min-height:200px;
+    box-shadow: 2px 2px 3px #999;
+    border-radius: 3px;
+    border: 1px solid #dcdcdc;
+}
+
+#AreaHead{
+    position: relative;
+    width:100%;
+    min-height:30px;
+    border-bottom: 1px solid #999;
+}
+
+#AreaBody{
+    width:99%;
+    box-shadow: 2px 2px 3px #999 inset;
+    min-height:150px;
+    padding: 5px 5px;
+
+}
+
+#AreaBody:focus{
+    border: none;
+    outline:none;
+}
+
+#AreaHead .imgButton{
+    width:30px;
+    height:30px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+#AreaHead .imgButton img{
+    width:30px;
+    hegiht:30px;
+    cursor: pointer;
+}
+
+#AreaHead .imgInfo{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    top:-10px;
+    left:10px;
+    font-size: 17px;
+    color:#999;
+}
+
+#AreaHead .submit{
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    top:4px;
+    right:30px;
+    width:40px;
+    height:30px;
+    background:#229ffd;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 20px;
+}
+
+#AreaHead .imgTable{
+    border:1px solid #f3f3f3;
+    box-shadow: 0px 0px 4px #666;
+    position: absolute;
+    left: 3px;
+    top:43px;
+    background: #FFF;
+}
+
+#AreaHead  .imgTable .images{
+    width:40px;
+    height:40px;
+    border:1px solid #eeee;
+    cursor: pointer;
+}
+
+#AreaHead  .imgTable .images:hover{
+    border:1px solid #666;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kwbbin.blog.dao.IBackgroundDao">
+<!--    <select id="getAllArticle"  resultType="article">-->
+<!-- 		SELECT * FROM article-->
+<!-- 	</select>-->
+<!--    <select id="findArticleNum"  resultType="Integer" parameterType="java.lang.String">-->
+<!-- 		select count(*) from article WHERE title like '%${condition}%'-->
+<!-- 	</select>-->
+
+	<select id="getAllSection"  resultType="section">
+ 		SELECT * FROM section
+ 	</select>
+	<select id="getSingleSection"  resultType="section">
+ 		SELECT * FROM section where id=#{id}
+ 	</select>
+	<select id="getSectionZone"  resultType="zone">
+ 		select * from zone where id in (SELECT zoneId from section)
+ 	</select>
+	<insert id="addSection" parameterType="section">
+		insert into section (title,zoneId,logo) values(#{title},#{zoneId},#{logo})
+	</insert>
+	<select id="getSectionByTitle"  resultType="section">
+ 		select * from section where title=#{title}
+ 	</select>
+    <select id="getSectionById"  resultType="section">
+ 		select * from section where id=#{id}
+ 	</select>
+	<update id="updateSection" parameterType="section">
+		update section set title=#{title},zoneId=#{zoneId},logo=#{logo} where id=#{id}
+	</update>
+	<delete id="deleteSection" parameterType="int">
+		delete from section where id = #{id}
+	</delete>
+
+
+	<select id="getAllMessage"  resultType="message">
+ 		SELECT * FROM message
+ 	</select>
+	<select id="getSingleMessage"  resultType="message">
+ 		SELECT * FROM message where id=#{id}
+ 	</select>
+	<delete id="deleteMessage" parameterType="int">
+		delete from message where id = #{id}
+	</delete>
+	<update id="updateMessageById" parameterType="message">
+		update message set content=#{content},responseTime=#{responseTime},userId=#{userId},good=#{good},answerToMessage=#{answerToMessage},answerToUser=#{answerToUser} where id=#{id}
+	</update>
+</mapper>

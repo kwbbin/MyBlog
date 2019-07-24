@@ -1,0 +1,560 @@
+body{
+    background: #f5f8f9;
+}
+#content{
+    padding: 37px 37px;
+
+}
+#content .left{
+    box-sizing: border-box;
+    float:left;
+    margin-right: 3%;
+    width:65%;
+    background:#fff;
+    padding:10px 20px 40px 20px;
+}
+
+/*文章主体 上*/
+#content .left .ArticleContent .title{
+	font-size: 22px;
+	margin-top:20px;
+	color:#333;
+
+}
+#content .left .ArticleContent .author{
+	margin-top: 10px;
+	margin-bottom:10px;
+	line-height: 34px;
+	text-align: left;
+}
+#content .left .ArticleContent .author span{
+	color:#999;
+}
+#content .left .ArticleContent .author .face{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	margin-right:15px;
+	position:relative;
+	top:10px;
+}
+
+#content .left .ArticleContent .author .face img{
+	border:1px solid rgb(87,219,224);
+	display:inline-block;
+	width:30px;
+	height:30px;
+	border-radius:50% 50%;
+}
+
+#content .left .reply{
+	
+}
+
+/*留言板*/
+.article{
+	position: relative;
+	border:1px solid #dcdcdc;
+	min-height: 120px;
+	background: rgba(255,255,255,0.7);
+	margin-top: 20px;
+	box-shadow: 2px 2px 3px #999;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.information{
+	position: relative;
+	height:50px;
+}
+
+.information .img{
+	background: #eee;
+	width:50px;
+	height:50px;
+	margin-right: 5px;
+	float:left;
+	border-radius: 5px;
+}
+.information .img img{
+	width:50px;
+	height:50px;
+}
+
+.information p:nth-of-type(1){
+	color:#666666;
+	padding-bottom: 5px;
+}
+
+.information p:nth-of-type(2){
+	color:#999999;
+	font-size: 13px;
+}
+
+
+.information span{
+	display: inline-block;
+	position: absolute;
+	right:10px;
+	top:10px;
+	color:#999;
+}
+
+.article_main{
+	padding:15px 10px;
+	width:90%;
+}
+
+
+.article_foot{
+	position: relative;
+	border-top: 1px solid #dcdcdc;
+
+}
+
+
+.article_foot div{
+	width:50px;
+	position: absolute;
+	right:10px;
+	bottom: 5px;
+	color:#a76820;
+}
+
+.article_foot .articleReply{
+	position: absolute;
+	bottom: 5px;
+	right: 60px;
+}
+
+.article_foot .good{
+	display:inline-block;
+	width:20px;
+	background:url("../images/good.png") no-repeat;
+	background-size:20px;
+	padding-left:22px;
+	cursor: pointer;
+}
+.article_foot .articleReply a{
+	color:#777011;
+}
+
+.reply{
+	margin-bottom: 10px;
+}
+.replyTo{
+	color:#999;
+	line-height: 23px;
+	font-size: 13px;
+	padding-left: 5px;
+
+}
+
+
+.replyTo span{
+	color:#5c9427;
+}
+.replyContent{
+	color:#666;
+	font-size: 15px;
+	padding-left: 20px;
+}
+/* 留言版内容 */
+/*文章主体 下*/
+
+/* 页面右边栏  上 */
+#content .right{
+    float:left;
+    box-sizing: border-box;
+    width:30%;
+}
+
+/* 右侧登录接口  上*/
+#content .right .register div{
+    text-align: center;
+    font-size: 16px;
+    color:#848484;
+    font-weight: 300;
+}
+#content .right .register .Link{
+    text-align: center;
+}
+#content .right .register .Link a{
+    display: inline-block;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    border:1px solid #ccc;
+    border-radius: 3px;
+    font-weight: 400;
+    color:#333;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    padding:6px 12px 6px 12px;
+    margin:20px 6px;
+}
+/* 右侧登录接口  下*/
+/* 右侧标题 */
+#content .right>div .H2{
+    font-size: 16px;
+    font-weight: 800;
+    color:#444;
+    line-height: 1em;
+}
+#content .right>div .rigntContent{
+    padding:15px 5px;
+    color:#777;
+}
+/* 右侧标题 */
+/* 关于我  上 */
+#content .right>div .atoutMeContent{
+    min-height:150px;
+}
+/* 关于我  下 */
+/* 标签云  上 */
+#content .right>div .labelContent span{
+    margin-right: 5px;
+}
+#content .right>div .labelContent .fontWeight {
+    font-size: 16px;
+}
+#content .right>div .labelContent span{
+    color:#777;
+    font-size: 10px;
+}
+/* 标签云  下 */
+
+/* 最新、热门文章  上 */
+#content .right>div>div .Article{
+    min-height: 65px;;
+    margin-bottom: 30px;
+}
+#content .right>div>div .Article .img,#content .right>div>div .Article .img img{
+    float: left;
+    width:60px;
+    height:60px;
+    margin-right: 40px;
+}
+#content .right>div>div .Article .Content a{
+    color:#333;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+#content .right>div>div .Article .time{
+    color:#aaa;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-left: 100px;
+}
+#content .right>div{
+    margin-bottom: 20px;
+}
+/* 最新、热门文章  下 */
+/* 友情链接  上 */
+#content .right>div .limkA li{
+    width:50%;
+    float: left;
+    text-align: left;
+    list-style-type: circle;
+    margin-top: 10px;
+}
+#content .right>div .limkA{
+    text-align: center;
+}
+#content .right>div .limkA a{
+    color:#777;
+
+}
+#content .right>div .limkA a:hover{
+    color: #38b7ea;
+}
+/* 友情链接  下 */
+/* 页面右边栏  下 */
+
+/* footer  上 */
+
+/* footer  下 */
+#footer{
+    background: #262a30;
+    padding:15px 0;
+}
+#footer p{
+    color: #999999;
+    line-height: 1.8;
+    font-weight: 300px;
+    font-size: 14px;
+    text-align: center;
+}
+@media screen and (max-width:850px){
+    #content{
+    	padding:0;
+    }
+    #head .navUl ul li{
+    	padding-right: 0;
+    }
+    #content .left{
+        width: 100%;
+        float: none;
+        margin:0 auto;
+     }
+     #content .left .article{
+        
+     }
+    #content .right{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px){
+    #content{
+        padding: 0;
+    }
+    #content .left .article .articleContent{
+        min-height: 100px;
+    }
+    #content .left .article .articleContent .title{
+        font-size: 1.0rem;
+        margin: 0px auto 3px;
+    }
+    #content .left .article .articleContent .articleMain{
+        height: 80px;
+        overflow: hidden;
+    }
+    #content .left .article .articleContent .articleMainContent{
+        font-size: 0.8rem;
+    }
+    #content .left .article .articleFooter .good{
+        display: none;
+    }
+    #content .left .article .articleContent .articleImg{
+        width:110px;
+        height:90px;
+        margin-right: 15px;
+        float: left;
+    }
+    #content .left .article .articleContent .articleImg img{
+        width:110px;
+        height:90px;
+    }
+    
+   
+    .article{
+    	box-sizing:border-box;
+    	width:100%;
+    }
+    
+}
+
+
+
+
+/*留言版上*/
+/*登录弹出框*/
+
+#loginOut{
+            top:0;
+            left:0;
+            background: rgba(255, 255, 255, 0.5);
+            height: 900px;
+            width:1360px;
+            padding-top: 100px;
+            position: fixed;
+        }
+        .loginBox{
+            width:270px;
+            height:305px;
+            background: #c9c049;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+
+        .loginBox .logindiv{
+            width:215px;
+            padding-top: 20px;
+            /* padding-bottom: 2px; */
+            margin-left: 25px;
+            border-bottom: 1px solid #cdd0d9;
+        }
+
+        .loginBox .logindiv .head{
+            padding-bottom: 12px;
+            color:#fff;
+        }
+
+        .loginBox .logindiv::after{
+            position: relative;
+            content: "OR ";
+            font-size: 13px;
+            color:#999;
+            display: block;
+            width:10px;
+            line-height: 10px;
+            height:10px;
+            background: #c9c049;
+            padding-left: 5px;
+            padding-right: 10px;
+            left:44%;
+            top:5px;
+        }
+        .loginBox p{
+            margin: 5px auto;
+            color:#fff;
+        }
+        .loginBox input[type=text],.loginBox input[type=password]{
+            width:207px;
+            height:30px;
+            border: 1px solid #e3e4e7;
+            padding-left: 5px;
+        }
+        .loginBox input[type=submit]{
+            width:215px;
+            height:35px;
+            color:#fff;
+            font-size: 17px;
+            letter-spacing:10px;
+            border-radius: 3px;
+            background: #0896d8;
+            border:2px solid #0874a4;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+ /*登录弹出框*/
+ 
+ 
+ 
+/* 表情模块 */
+#emojiBox{
+	display: inline-block;
+	position: relative;
+}
+#emojiBox label{
+	display: inline-block;
+	color:#0b394d;
+	text-align: center;
+	width:80px;
+	height:30px;
+	margin-left: 20px;
+	line-height: 20px;
+	border-radius: 5px;
+}
+#emojiBox>img{
+	position: relative;
+	border-radius: 50%;
+	top:3px;
+	padding-top: 5px;
+	cursor: pointer;
+	width:30px;
+}
+/* 表情模块 */
+
+
+
+/* 回复框的css */
+#replyBox{
+	position:fixed;
+	top:100px;
+	left:100px;
+    width:500px;
+    border:1px solid #999;
+    background:#96b97d;
+    border-radius: 5px;
+    display:none;
+}
+
+#replyBox .close{
+	position:absolute;
+	right:5px;
+	top:2px;
+	display:inline-block;
+	line-height: 15px;
+	text-align:center;
+	width:15px;
+	height:15px;
+	border:1px solid #999;
+	cursor: pointer;
+}
+#replyBox .box{
+    position: absolute;
+    display: inline-block;
+    top:185px;
+    left:130px;
+    width:220px;
+    height:30px;
+}
+#replyBox .box span{
+    color:#0b394d;
+    line-height: 30px;
+}
+#replyBox .box .imgbox{
+    position: absolute;
+    right:0px;
+    display: inline-block;
+}
+
+#replyBox .box .imgbox div{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 2px;
+
+}
+#replyBox .box .imgbox img{
+    width:30px;
+    height:30px;
+}
+
+#replyBox .speak_area{
+    width:98%;
+    padding-bottom: 20px;
+	color:#db7d12d0;
+	margin:0 auto;
+	letter-spacing:2px;
+	height:220px;
+}
+
+ .speak_content iframe{
+	border-radius: 10px;
+	width:100%;
+	height:140px;
+	padding:5px 0px;
+	letter-spacing:1px;
+	background: rgba(255,255,255,0.9);
+	resize: none;
+	font-size: 15px;
+	line-height: 25px;
+	box-sizing:border-box;
+	border: 1px solid #999;
+	margin: 0 auto;
+}
+
+.speak_content input[type=button],.speak_content input[type=submit]{
+	width:100px;
+	height: 40px;
+	color:#fff;
+	font-weight: 700;
+	font-size: 16px;
+	background: #4da488;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-left: 5px;
+	border: 1px solid #999;
+	box-shadow:2px 2px 5px darkcyan inset;
+	font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+	cursor: pointer;
+}
+
+
+/* 回复框的css */
+/*留言版下*/
+
+
+
+
+
+
+
+
+
+

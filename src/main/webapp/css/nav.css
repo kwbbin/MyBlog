@@ -1,0 +1,155 @@
+/* 响应式结构 */
+#head{
+    width: 100%;
+    position: relative;
+    box-sizing:border-box;
+    color: #565a5f;
+    line-height: 60px;
+    background: #ffffff;
+}
+#head>div{
+    height: 60px;
+    box-sizing:border-box;
+}
+
+#head .logo{
+    width:250px;
+    margin-left: 40px;
+    line-height:60px;
+    font-family:myFont;
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top:0px;
+}
+#head .seachInput{
+    width:270px;
+    position: absolute;
+    margin-right: 40px;
+    right:0;
+    top:0;
+}
+#head .navUl{
+    width:100%;
+    padding-left: 290px;
+    padding-right: 310px;
+}
+#head .navUl ul{
+    width:100%;
+}
+
+#head .nav-box li{
+    display: inline-block;
+    height:35px;
+    padding-right: 5%;
+    text-align: center;
+    line-height: 35px;
+}
+
+
+#head .nav-box li a{
+    font-size: 1.1rem;
+    display: inline-block;
+    height:35px;
+    line-height: 35px;
+    color:#565a5f;
+
+}
+#head .nav-box li a:hover{
+    color:#38b7ea;
+}
+
+@media screen and (max-width:1050px){
+    #head>div{
+        display:block;
+     }
+    
+     #head .navUl{
+         margin-top: 67px;
+         padding:0;
+         padding-left: 10%;
+     }
+
+     #head .navUl ul li{
+        padding-right: 10%;
+     }
+} 
+
+
+@media screen and (max-width:675px){
+    #head>div{
+        display:block;
+        width:100%;
+        position: relative;
+     }
+
+     #head .seachInput{
+        position: relative;
+        margin:0 auto 10px;
+    }
+    
+     #head .navUl{
+        padding-left: 0;
+        height: auto;
+        margin-top: 0;
+     }
+     #head .logo{
+        position: relative; 
+        margin:0 auto;
+        text-align: center;
+        
+     }
+     #head .navUl ul li{
+        display: block;
+        clear: both;
+        width:100%;
+        background: #eceff2;
+        border-bottom: 1px solid #ffffff;
+     }
+}
+/* 响应式结构 */
+
+/* 细节 */
+#head>div{
+    /* border:1px solid red; */
+}
+#head{
+    box-shadow: 1px 1px 5px #888888;
+    border:1px solid transparent;
+}
+
+/* 搜索框 */
+#head .seachInput{
+    
+}
+#head .seachInput form{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+#head .seachInput input[type=text]{
+    margin-top: 10px;
+    width:80%;
+    padding:0 30px 0 15px;
+    line-height: 40px;
+    height:40px !important;
+    border-radius: 21px;
+    font-size: 1.1rem;
+    border:1px solid #eceff2;
+    outline: none;
+ }
+
+ #head .seachInput input[type=submit]{
+     width:13px;
+    height: 13px;
+     position: absolute;
+    right: 20px;
+    top:25px;
+    background: url(../images/search.jpg) 0px 0px no-repeat;
+    background-size: 100%;
+    border: none;
+ }
+
+
+/* 搜索框 */
+/* 细节 */

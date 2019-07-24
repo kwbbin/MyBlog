@@ -1,0 +1,35 @@
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="kwbbin.blog.dao.IMyUserDao">
+	<insert id="addUser" parameterType="myUser">
+		insert into myuser (logo,name,email,telephone,password,sex,type,joinTime,userNumber) values(#{logo},#{name},#{email},#{telephone},#{password},#{sex},#{type},#{joinTime},#{userNumber})
+		<selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+			SELECT LAST_INSERT_ID()
+		</selectKey>
+	</insert>
+
+ 	<delete id="deleteUser">
+ 		DELETE FROM myuser where id=#{id}
+ 	</delete>
+ 	
+ 	<update id="updateUser">
+ 		update myuser set logo=#{logo},name=#{name},email=#{email},telephone=#{telephone},password=#{password},sex=#{sex},type=#{type},joinTime=#{joinTime},userNumber=#{userNumber} where id=#{id}
+ 	</update>
+ 	
+ 	<select id="searchUserById" resultType="myUser">
+ 		select * from myuser where id=#{id}
+ 	</select>
+
+<select id="findMyUserByNameAndPassword" resultType="myUser">
+ 		select * from myuser where userNumber=#{0} and password=#{1}
+ 	</select>
+
+<select id="findMyUserByUserNumber" resultType="myUser">
+ 		select * from myuser where userNumber=#{userNumber}
+ 	</select>
+
+	<select id="getNameByid" resultType="string" parameterType="int">
+ 		select name from myuser where id=#{id}
+ 	</select>
+ </mapper>

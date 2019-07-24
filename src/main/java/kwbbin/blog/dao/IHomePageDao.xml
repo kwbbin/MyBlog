@@ -1,0 +1,43 @@
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="kwbbin.blog.dao.IHomePageDao">
+ 	<select id="getAllArticle" resultType="article">
+ 		select * from article
+ 	</select>
+ 	
+ 	<select id="getArticleSum"  resultType="Integer">
+ 		select count(*) from article
+ 	</select>
+ 	
+ 	<select id="getAllHomePageLabel"  resultType="articleType_">
+ 		SELECT a.id aid,a.good,a.articleType from articletype ar,article a where ar.id=a.articleType
+ 	</select>
+ 	<select id="getArticleTypeById"  resultType="articleType">
+ 		SELECT * from articletype where id=#{id}
+ 	</select>
+ 	<select id="getRentArticle"  resultType="article">
+ 		SELECT * FROM article order by id DESC limit 5;
+ 	</select>
+ 	<select id="getHotArticle"  resultType="article">
+ 		SELECT * FROM article order by good DESC limit 5;
+ 	</select>
+ 	<select id="getFriendLink"  resultType="friendlink">
+ 		SELECT * FROM friendlink
+ 	</select>
+ 	<select id="FindArticle"  resultType="article" parameterType="string">
+ 		SELECT * FROM article WHERE title like '%#{condition}%'
+ 	</select>
+ 	<select id="findArticleNum"  resultType="Integer">
+ 		select count(*) from article WHERE title like '%#{condition}%'
+ 	</select>
+	<!-- 点赞功能(Update) -->
+	<update id="addGood" parameterType="int">
+		update article SET good=good+1 where id=#{id}
+	</update>
+	<!--查询留言条数-->
+	<select id="getReplyNum"  resultType="Integer" parameterType="int">
+ 		select count(*) from reply where articleId=#{id}
+ 	</select>
+ 	
+ </mapper>

@@ -1,0 +1,14 @@
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="kwbbin.blog.dao.IMessageDao">
+    <select id="getAllMessage" resultType="message">
+ 		select * from message
+ 	</select>
+    <select id="getMessageSum"  resultType="Integer">
+ 		select count(*) from message
+ 	</select>
+    <insert id="addMessage" parameterType="message">
+        insert into message (content,responseTime,userId) values (#{content},#{responseTime},#{userId})
+    </insert>
+ </mapper>
